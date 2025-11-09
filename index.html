@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laundry Services</title>
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- responsive-grid-system css -->
+  <link rel="stylesheet" href="css/grid.css">
+  <!-- aos css(animation) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-query.css">
+</head>
+<body>
+    <!-- NAVBAR START -->
+    <header class="navbar">
+        <!-- LOGO -->
+		<a href="#"><img class="logo" src="img/logo/logo.png" alt="Laundry Services"></a>
+        <!-- MENUS -->
+		<div class="menus">
+			<ul class="nav-link">
+				<li><a href="#">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#features">About Us</a></li>
+				<li><a href="#footer">Contact Us</a></li>
+			</ul>
+		</div>
+        <!-- MYACCOUNT & HAMEBURGER MENUS -->
+        <div class="info-box">
+            <span class="my-account">Username</span>
+            <button class="hamburger"><ion-icon name="ellipsis-vertical-sharp"></ion-icon></button>
+        </div>
+    </header>
+    <!-- NAVBAR END -->
+    <!-- MAIN START -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="section group equal-height" data-aos="zoom-in-up" data-aos-duration="1000">
+                <div class="col span_6_of_12 hero-content">
+                    <h2>Revitalize Your</h2>
+                    <h2>Clothes with Expert<br><span>Laundry Services!</span></h2>
+                    <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+                    <a href="#services"><ion-icon name="storefront-outline"></ion-icon>&nbsp;&nbsp;Book a service today!</a>
+                </div>
+                <div class="col span_6_of_12 hero-image"> 
+                    <img src="img/hero/laundary.png" alt="Laundry Machine">
+                </div>
+            </div>
+        </section>
+        <!-- ADVERTISEMENT SECTION -->
+        <section class="advertisement" id="advertisement">
+            <div class="section group">
+                <div class="col span_6_of_12 advertisement-title">
+                    <h2>Our Advertisement</h2>
+                </div>
+                <div class="col span_2_of_12 advertisement-content">
+                    <strong>15+</strong><br>Laundry Services
+                </div>
+                <div class="col span_2_of_12 advertisement-content">
+                    <strong>240+</strong><br>Happy Customers
+                </div>
+                <div class="col span_2_of_12 advertisement-content">
+                    <strong>2+ Yrs</strong><br>Experience
+                </div>  
+            </div>
+        </section>
+        <!-- SERVICES SECTION -->
+        <section class="services" id="services">
+            <div class="section group equal-height">
+                <div class="col span_7_of_12 service-items">
+                    <div class="items-header">
+                        <h2>Our Services</h2>
+                        <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                    </div>
+                    <hr>
+                    <div class="section group items-body">
+                        <div class="span_12_of_12 service-1">
+                            <img src="img/services/dry-cleaning.jpg" width="20" alt="Dry Cleaning">&nbsp;
+                            <span class="name">Dry Cleaning</span>
+                            <span class="dot">.</span>
+                            <span class="amt">&#8377;200.00</span>
+                            <button class="add-item-btn" onclick="addItem('Dry Cleaning',200,1)">Add Item&nbsp;<ion-icon name="add-circle-outline"></ion-icon></button>
+                            <button class="remove-item-btn" onclick="removeItem('Dry Cleaning',200,1)">Remove Item&nbsp;<ion-icon name="remove-circle-outline"></ion-icon></button>
+                        </div>
+                        <div class="span_12_of_12 service-2">
+                            <img src="img/services/wash-fold.jpg" width="20" alt="Wash & Fold">&nbsp;
+                            <span>Wash & Fold</span>
+                            <span class="dot">.</span>
+                            <span class="amt">&#8377;100.00</span>
+                            <button class="add-item-btn" onclick="addItem('Wash & Fold',100,2)">Add Item&nbsp;<ion-icon name="add-circle-outline"></ion-icon></button>
+                            <button class="remove-item-btn" onclick="removeItem('Wash & Fold',100,2)">Remove Item&nbsp;<ion-icon name="remove-circle-outline"></ion-icon></button>
+                        </div>
+                        <div class="span_12_of_12 service-3">
+                            <img src="img/services/ironing.jpg" width="20" alt="Ironing">&nbsp;
+                            <span>Ironing</span>
+                            <span class="dot">.</span>
+                            <span class="amt">&#8377;30.00</span>
+                            <button class="add-item-btn" onclick="addItem('Ironing',30,3)">Add Item&nbsp;<ion-icon name="add-circle-outline"></ion-icon></button>
+                            <button class="remove-item-btn" onclick="removeItem('Ironing',30,3)">Remove Item&nbsp;<ion-icon name="remove-circle-outline"></ion-icon></button>
+                        </div>
+                        <div class="span_12_of_12 service-4">
+                            <img src="img/services/leather-suede.jpg" width="20" alt="Leather & Suede Cleaning">&nbsp;
+                            <span>Leather & Suede Cleaning</span>
+                            <span class="dot">.</span>
+                            <span class="amt">&#8377;999.00</span>
+                            <button class="add-item-btn" onclick="addItem('Leather & Suede Cleaning',999,4)">Add Item&nbsp;<ion-icon name="add-circle-outline"></ion-icon></button>
+                            <button class="remove-item-btn" onclick="removeItem('Leather & Suede Cleaning',999,4)">Remove Item&nbsp;<ion-icon name="remove-circle-outline"></ion-icon></button>
+                        </div>
+                         <div class="span_12_of_12 service-5">
+                            <img src="img/services/stain-removal.jpg" width="20" alt="Stain Removal">&nbsp;
+                            <span>Stain Removal</span>
+                            <span class="dot">.</span>
+                            <span class="amt">&#8377;500.00</span>
+                            <button class="add-item-btn" onclick="addItem('Stain Removal',500,5)">Add Item&nbsp;<ion-icon name="add-circle-outline"></ion-icon></button>
+                            <button class="remove-item-btn" onclick="removeItem('Stain Removal',500,5)">Remove Item&nbsp;<ion-icon name="remove-circle-outline"></ion-icon></button>
+                        </div>
+                        <div class="span_12_of_12 service-6">
+                            <img src="img/services/wedding-dress.jpg" width="20" alt="Wedding Dress Cleaning">&nbsp;
+                            <span>Wedding Dress Cleaning</span>
+                            <span class="dot">.</span>
+                            <span class="amt">&#8377;2800.00</span>
+                            <button class="add-item-btn" onclick="addItem('Wedding Dress Cleaning',2800,6)">Add Item&nbsp;<ion-icon name="add-circle-outline"></ion-icon></button>
+                            <button class="remove-item-btn" onclick="removeItem('Wedding Dress Cleaning',2800,6)">Remove Item&nbsp;<ion-icon name="remove-circle-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                    <hr>
+                     <div class="items-footer">
+                        <p><ion-icon name="alert-circle-outline"></ion-icon>&nbsp;Add the items to the cart and book now</p>
+                    </div>
+                </div>
+                <div class="col span_5_of_12 service-booking">
+                    <!-- ADD TO CART -->
+                     <div class="section group add-to-cart">
+                        <div class="col span_12_of_12">
+                            <h2>Added Items</h2>
+                            <table>
+                            <thead>
+                                <tr>
+                                <th class="serial-no">S.No</th>
+                                <th class="serial-name">Service Name</th>
+                                <th class="price">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-tbody" data="no">
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                <th colspan="2" align="left" class="total-amt-label">Total Amount</th>
+                                    <th class="total-amt">&#8377;&nbsp;<span id="total">0.00</span></th>
+                                </tr>
+                            </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- BOOK NOW -->
+                    <div class="section group book-now">
+                        <form id="booking-form">
+                            <div class="col span_12_of_12">
+                                <h2>Book Now</h2>
+                                <label for="booking-name">Full Name</label><br>
+                                <input type="text" class="inputClass" name="booking-name" id="booking-name" value="" placeholder="John Doe" required>
+                            </div>
+                            <div class="col span_6_of_12"> 
+                                <label for="booking-email">Email</label><br>
+                                <input type="email" class="inputClass" name="booking-email" id="booking-email" value="" placeholder="mail@gmail.com" required>
+                            </div>
+                            <div class="col span_6_of_12 phone-number-box">
+                                <label for="booking-phone-number">Phone Number</label><br>
+                                <input type="tel" class="inputClass" name="booking-phone-number"  id="booking-phone-number" maxlength="10" pattern="\d{10}"  value="" placeholder="0000000000" required>
+                            </div>
+                            <div class="col span_12_of_12">
+                                <button type="submit" id="booking-btn">Book Now</button>
+                                <p class="booking-label">&nbsp;</p>
+                            </div> 
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FEATURES SECTION -->
+        <section class="features" id="features">
+                <div class="section group equal-height">
+                    <div class="col span_3_of_12 feature-content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        <img src="img/features/premium-services.jpg" alt="Premium Services">
+                        <h3>Premium Services</h3>
+                        <p>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+                    </div>
+                    <div class="col span_3_of_12 feature-content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        <img src="img/features/quick-support.jpg" alt="Quick Support">
+                        <h3>Quick Support</h3>
+                        <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free.</p>
+                    </div>
+                    <div class="col span_3_of_12 feature-content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        <img src="img/features/hassle-free-delivery.jpg" alt="Hassle Free Delivery">
+                        <h3>Hassle Free Delivery</h3>
+                        <p>Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+                    </div>
+                    <div class="col span_3_of_12 feature-content" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        <img src="img/features/affordable-price.jpg" alt="Affordable Prices">
+                        <h3>Affordable Prices</h3>
+                        <p>Experience exceptional care without breaking the bank-our affordable prices make laundry day stress-free.</p>
+                    </div>
+                </div> 
+        </section>
+        <!-- NEWSLETTER SECTION -->
+        <section class="newsletter" id="newsletter">
+            <div class="section group">
+                <div class="col span_5_of_12 newsletter-title">
+                    <h2>Subscribe to our <br>Newsletter</h2>
+                </div>
+                <div class="col span_7_of_12 newsletter-form">
+                    <form>
+                        <div class="section group">
+                            <div class="col span_12_of_12">
+                                <input type="text" name="newsletter-name" id="newsletter-name" value="" placeholder="Full Name" required>
+                                <input type="email" name="newsletter-email" id="newsletter-email" value="" placeholder="Email" required><br>
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN END  -->
+    <!-- FOOTER START -->
+    <footer id="footer">
+        <div class="section group">
+            <div class="col span_3_of_12 about-us">
+				<a href="#"><img class="logo" src="img/logo/logo.png" alt="Laundry Services"></a><br><br>
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div class="col span_3_of_12 links">
+				<h2>Important Links</h2>
+                <ul>
+                    <li><a href="#quality">About us</a></li>
+                    <li><a href="#footer">Contact us</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Term of use</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                </ul>
+			</div>
+			<div class="col span_3_of_12 contact-info">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="mailto:mail@site.com">mail@site.com</a></li>
+                    <li><a href="tel:+919123456780">+919123456780</a></li>
+                </ul>
+			</div>
+			<div class="col span_3_of_12 follow-us">
+				<h2>Follow Us</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://x.com/"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+			</div>
+        </div>
+    </footer>
+    <!-- FOOTER END  -->
+    <!-- aos js(animation) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <!-- jquery js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- ionicon js -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- smooth scrolling -->
+    <script>
+         $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+            // Store hash
+            var hash = this.hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+            // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+            });
+        });
+    </script>
+    <!-- email JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script> emailjs.init({ publicKey: 'XJTdeQuKwNhYlRLlx' }); </script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
