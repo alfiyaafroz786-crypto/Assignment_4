@@ -91,7 +91,7 @@ form.addEventListener("submit", function (e) {
     setTimeout(() => { msg.innerHTML = `&nbsp;` }, 1000);
   }
   else{
-     emailjs.send("service_pak8gjl", "template_hu1yhaw", {
+     emailjs.send("service_id", "template_id", {
         name: name,
         email: email,
         phone: phone,
@@ -121,4 +121,5 @@ form.addEventListener("submit", function (e) {
         console.error("Email send failed", err);
       });
   }
+
 });
